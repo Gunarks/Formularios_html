@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="github.com/Gunarks">
+        <title>Formulário de contato</title>
+        <link rel="stylesheet" href="./css/index.css">
+    </head>
+
+    <body>
+        <form action="#" autocomplete="off">
+            <fieldset>
+                <legend>Formulário de contato</legend>
+
+                <label for="name">Nome</label>
+                <input type="text" id="name" name="name" required placeholder="Digite seu nome aqui">
+
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" placeholder="Digite o seu e-mail aqui" required>
+
+                <label for="subject">Assunto</label>
+                <input type="text" id="subject" name="subject">
+
+                <textarea name="message" id="message" rows="7" required maxlength="1000" minlength="25"
+                    placeholder="Conte-nos tudo"></textarea>
+
+                <button type="submit" class="btn">Enviar</button>
+            </fieldset>
+        </form>
+    </body>
+
+</html>

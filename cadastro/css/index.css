@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #00bbff;
+    font-family: "Helvetica", Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+form {
+    width: 90%;
+    min-width: 22rem;
+    max-width: 30rem;
+    padding: 1rem;
+    background-color: #FFF;
+    box-shadow: -8px 0  rgba(0, 0, 0, .3);
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1.3rem;
+}
+
+legend {
+    padding: .5rem;
+    text-align: center;
+    color: #00a6ff;
+    font-size: 1.5rem;
+}
+.form-group input, label {
+    display: block;
+    width: 100%;
+    margin: .75rem 0;
+}
+
+.form-group label {
+    text-transform: uppercase;
+}
+
+input {
+    border: 2px solid transparent;
+    border-bottom-color: #00a6ff;
+    margin: .5rem 0 2.5rem;
+    transition: all .2s linear;
+    padding: .75rem 0;
+    outline-color: #00a6ff;
+}
+input:invalid:focus{
+    border-bottom: 2px solid #ff000d;
+    outline-color: #ff000d;
+}
+
+input:valid:focus{
+    border-bottom: 2px solid #02c72a;
+    outline-color: #02c72a;
+}
+
+input:focus {
+    border-color: #00a6ff;
+    padding-left:.5rem;
+}
+
+.btn {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn p {
+    font-size: .7rem;
+}
+.btn p a {
+    text-decoration: none;
+}
+.btn button {
+    background-color: #00a6ff;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .2s linear;
+}
+.btn button:hover {
+    background-color: #00bbff;
+}
+
+.cadastrar_btn {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cadastrar_btn p {
+    text-transform: uppercase;
+    padding-left: .5rem;
+}
+
+.cadastrar_btn p a {
+    color: #00bbff;
+    font-size: 1rem;
+}
+.action_aside {
+    text-align: end;
+    flex-grow: 1;
+}
